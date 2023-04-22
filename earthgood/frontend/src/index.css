@@ -1,0 +1,104 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+html, body{
+  height: 100%;
+}
+
+
+.box1{
+  display: flex;/*Enables flexbox*/
+  /* background-image: url(./images/japanesestreetsmedium.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.sidemenu{
+  display: flex;
+  height: inherit;
+  width: 18%;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+
+}
+
+.mainscreen{
+  display: flex;
+  height: inherit;
+  flex-grow: 1; /*Takes up the available space.*/
+  justify-content: center;      
+  align-items: center;
+  font-size: xx-large;
+
+}
+
+
+
+.button{  
+  width: 25%;
+  background-color: gray;
+  padding: 10%;
+  opacity: 0.5;
+  text-align: center;
+  font-size: xx-large;
+  color:rgb(235, 153, 167);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: opacity 0.8s;
+  font: bolder;
+  transition: button_select 0.8s;
+}
+
+.text{
+  opacity: 50;
+}
+
+.button:hover{
+  cursor: pointer;
+  animation: button_select 0.8s ease-out both 1;
+}
+
+
+@keyframes button_select{
+  0%{
+    width: 25%;
+    opacity: 0.4;
+  }
+
+  100%{
+    width: 80%;
+    opacity: 0.5;
+  }
+}
+
+.container{
+  height: 100vh;
+  overflow-y: scroll; /*Checks to see if y is being scrolled*/
+  scroll-snap-type: y mandatory; /*Y is axis we're scrolling. Determines the strictness of snapness for the second attribute.*/
+}
+
+.box{ /*Each div with box attribute will take 100% of the viewport.*/
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+
+.box3{
+  background-color: blue;
+}
+
+.box4{
+  background-color: pink;
+}
+
+
+
