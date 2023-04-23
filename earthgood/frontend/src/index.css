@@ -125,7 +125,7 @@ body{
 }
 
 .outergachaImage{
-  background-color: wheat;
+  background-color: none;
   display: flex;
   align-content: center;
 }
@@ -292,4 +292,57 @@ body{
   text-align: center;
   font-size: xx-large;
 }
-
+/* article box */
+.infobox{
+  background-color:rgb(255, 255, 255);
+  width: 800px;
+  height: 700px;
+  position: relative;
+  right: -70px;
+}
+/* third section */
+.box3{
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* quiz */
+.panel{
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  right: -150px;
+  top: 0px;
+  width: 500px;
+  height: 500px;
+}
+.question-container{
+  text-align: center;
+}
+/* quiz buttons */
+#op1{
+  background-color: rgb(141, 67, 67);
+  display: block;
+  margin: auto;
+}
+#op2{
+  background-color: rgb(141, 67, 67);
+  display: block;
+  margin: auto;
+}
+#op3{
+  background-color: rgb(141, 67, 67);
+  display: block;
+  margin: auto;
+}
+#op4{
+  background-color: rgb(141, 67, 67);
+  display: block;
+  margin: auto;
+}
+.checkanswer{
+  background-color: rgb(141, 67, 67);
+  display: block;
+  margin: auto;
+}
