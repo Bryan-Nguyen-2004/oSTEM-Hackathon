@@ -1,13 +1,295 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  padding: 0px;
+  margin: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  height: 100%;
+  width: 100%;
 }
+
+
+
+.box1{
+  display: flex;/*Enables flexbox*/
+  background-repeat: no-repeat;
+  flex-direction: column;
+  background-image: url("https://wallpapercave.com/wp/wp3493593.jpg");
+  background-size: cover;
+  color: white;
+  font-size: xx-large;
+}
+
+
+
+/* .sidemenu{
+  display: flex;
+  height: inherit;
+  width: 18%;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+
+} */
+
+.mainscreen{
+  display: flex;
+  height: inherit;
+  flex-grow: 1; /*Takes up the available space.*/
+  justify-content: center;      
+  align-items: center;
+  font-size: xx-large;
+
+}
+
+
+
+/* .button{  
+  width: 25%;
+  background-color: gray;
+  padding: 10%;
+  opacity: 0.5;
+  text-align: center;
+  font-size: xx-large;
+  color:rgb(235, 153, 167);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: opacity 0.8s;
+  font: bolder;
+  transition: button_select 0.8s;
+} */
+
+.text{
+  opacity: 50;
+}
+
+.button:hover{
+  cursor: pointer;
+  animation: button_select 0.8s ease-out both 1;
+}
+
+
+@keyframes button_select{
+  0%{
+    width: 25%;
+    opacity: 0.4;
+  }
+
+  100%{
+    width: 80%;
+    opacity: 0.5;
+  }
+}
+
+.container{
+  height: 100vh;
+  overflow-y: scroll; /*Checks to see if y is being scrolled*/
+  scroll-snap-type: y mandatory; /*Y is axis we're scrolling. Determines the strictness of snapness for the second attribute.*/
+}
+
+.box{ /*Each div with box attribute will take 100% of the viewport.*/
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.box3{
+  background-color: black;
+}
+
+.box4{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar{
+  display: flex;
+  justify-content: right;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: gray;
+  height: 8%;
+  width: 100vw;
+  opacity: 0.8;
+}
+
+.box2{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+}
+
+.outergachaImage{
+  background-color: wheat;
+  display: flex;
+  align-content: center;
+}
+
+.gachaImage{
+  width: 50%;
+  height: 1000px;
+
+}
+
+.outerInfo{
+  background-color: white;
+}
+
+.gachaInfo{
+  border-width: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10%;
+  color: white;
+  padding-top: 10%;
+  margin-right: 20%;
+  background-color: red;
+  
+}
+
+.gachaInfo2{
+  background-color:blue;
+  width: 500px;
+  height: 500px;
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 2s;
+  transform: translateX(-100%);
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.seedpacketImage{
+
+  animation: seedPacket 2s infinite alternate-reverse both ease-in-out;
+  width: 25vw;
+  height: 75vh;
+
+}
+
+.seedpacketImage:hover{
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+@keyframes seedPacket{
+  0%{
+    transform: translatey(0);
+  }
+
+  50%{
+    transform: rotateY(90deg);
+  }
+
+
+  100%{
+    transform: translatey(50px);
+  }
+}
+
+
+.signupbutton{
+  background-color: rgb(0, 0, 0);
+  width: 5vw;
+  height: 3vw;
+  border-radius: 150px;
+  position: relative;
+  right: 10px;
+  border-color: black;
+  transition-duration: 0.4s;
+  color: white;
+  top: -70px;
+}
+
+.loginbutton{
+  background-color: rgb(0, 0, 0);
+  width: 5vw;
+  height: 3vw;
+  border-radius: 150px;
+  position: relative;
+  right: 20px;
+  border-color: black;
+  transition-duration: 0.4s;
+  color: white;
+  top: -70px;
+}
+
+.signupbutton:hover{
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.signupbutton:active{
+  background-color: #5a5a5a;
+  transition-duration: 0s;
+  color: rgb(0, 0, 0);
+}
+
+
+.loginbutton:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.loginbutton:active{
+  background-color: #5a5a5a;
+  transition-duration: 0s;
+  color: rgb(0, 0, 0);
+}
+
+.topbar {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-color: transparent;
+  height: 8%;
+  width: auto; 
+  opacity: 0.8;
+}
+
+.outergrid{
+  display: grid;
+  background-color: black;
+  flex-grow: 1;
+  justify-content: center;
+  align-content: center;
+}
+
+.thegrid{
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(5, 20%);
+  background-color: red;
+  width: 75vw;
+  height: 75vh;
+
+}
+
+
+.gridbox:hover{
+  background-color: gray;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.Title{
+  width: 100vw;
+  background-color: black;
+  height: auto;
+  width: auto;
+  color:white;
+  text-align: center;
+  font-size: xx-large;
+}
+
