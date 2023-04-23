@@ -153,6 +153,8 @@ html, body{
 
 .seedpacketImage{
   animation: seedPacket 0.8s infinite alternate-reverse both ease-in-out;
+  width: 25vw;
+  height: 75vh;
 }
 
 .seedpacketImage:hover{
