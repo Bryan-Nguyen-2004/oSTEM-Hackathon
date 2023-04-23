@@ -23,11 +23,14 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
+
+var vid = document.getElementById("openingVideo")
+const playVideo = document.getElementById("seedpacketImage")
+
+playVideo.addEventListener("click", function(){
+  vid.play();
+})
+
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
-
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 

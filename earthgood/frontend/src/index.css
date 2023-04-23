@@ -21,44 +21,6 @@ body{
 }
 
 
-
-/* .sidemenu{
-  display: flex;
-  height: inherit;
-  width: 18%;
-  flex-direction: column;
-  justify-content: center;
-  justify-content: space-around;
-
-} */
-
-.mainscreen{
-  display: flex;
-  height: inherit;
-  flex-grow: 1; /*Takes up the available space.*/
-  justify-content: center;      
-  align-items: center;
-  font-size: xx-large;
-
-}
-
-
-
-/* .button{  
-  width: 25%;
-  background-color: gray;
-  padding: 10%;
-  opacity: 0.5;
-  text-align: center;
-  font-size: xx-large;
-  color:rgb(235, 153, 167);
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  transition: opacity 0.8s;
-  font: bolder;
-  transition: button_select 0.8s;
-} */
-
 .text{
   opacity: 50;
 }
@@ -98,7 +60,7 @@ body{
 
 .box4{
   background-color: black;
-  display: flex;
+  display: flex;  
   flex-direction: column;
 }
 
@@ -127,8 +89,10 @@ body{
 
   background-color: gray;
   width: 50vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  background-color: black;
 }
 
 .outerInfo{
@@ -203,6 +167,7 @@ body{
   animation-play-state: paused;
   cursor: pointer;
 }
+
 
 @keyframes seedPacket{
   0%{
