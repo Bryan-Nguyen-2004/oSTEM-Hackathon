@@ -208,6 +208,7 @@ body{
   border-color: black;
   transition-duration: 0.4s;
   color: white;
+  top: -70px;
 }
 
 .loginbutton{
@@ -220,6 +221,7 @@ body{
   border-color: black;
   transition-duration: 0.4s;
   color: white;
+  top: -70px;
 }
 
 .signupbutton:hover{
@@ -282,7 +284,8 @@ body{
 .Title{
   width: 100vw;
   background-color: black;
-  height: 30;
+  height: auto;
+  width: auto;
   color:white;
   text-align: center;
   font-size: xx-large;
