@@ -125,21 +125,23 @@ body{
 }
 
 .outergachaImage{
-  
+  background-color: wheat;
+  display: flex;
+  align-content: center;
 }
 
 .gachaImage{
   width: 50%;
   height: 1000px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+
+}
+
+.outerInfo{
+  background-color: white;
 }
 
 .gachaInfo{
   border-width: 20px;
-  width: 500px;
-  height: 500px;
   align-items: center;
   justify-content: center;
   margin-right: 10%;
