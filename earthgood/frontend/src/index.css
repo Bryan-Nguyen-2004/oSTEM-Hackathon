@@ -16,10 +16,8 @@ html, body{
 .box1{
   display: flex;/*Enables flexbox*/
   background-repeat: no-repeat;
-  background-size: cover;
   flex-direction: column;
-  object-fit: cover;
-  
+  background-color: red;
 }
 
 /* .sidemenu{
@@ -111,6 +109,62 @@ html, body{
   opacity: 0.8;
 }
 
+.box2{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url(https://i.ytimg.com/vi/inwFLnzksZw/maxresdefault.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
+}
 
+.gachaImage{
+  width: 50%;
+  height: 1000px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 
+.gachaInfo{
+  border-color: black;
+  border-style: double;
+  border-width: 20px;
+  width: 500px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10%;
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 2s;
+  transform: translateX(-100%);
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.seedpacketImage{
+  animation: seedPacket 0.8s infinite alternate-reverse both ease-in-out;
+}
+
+.seedpacketImage:hover{
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+@keyframes seedPacket{
+  0%{
+    transform: translatey(0);
+  }
+  100%{
+    transform: translatey(50px);
+  }
+}

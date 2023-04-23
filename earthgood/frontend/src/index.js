@@ -11,6 +11,22 @@ root.render(
   </React.StrictMode>
 );
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+    else{
+      entry.target.classList.remove("show");
+    }
+
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
+
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
